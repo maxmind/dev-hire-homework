@@ -2,7 +2,7 @@ The given log file is a standard log file in the [Apache combined log format](ht
 
 You can use any language you are comfortable with, as long as that language has an API for the GeoIP2 databases (see below). You are also encouraged to use any third party libraries you like. However, you must deliver the end result in a way that allows us to run the code on a standard Ubuntu Precise or Trusty system. That means either packaging up all of your dependencies or giving us very clear instructions on how to install them. Unless the language you choose is Perl, assume that we do not know anything about the package management tools for that language! We will run your code to look at the output, as well as looking at the code itself.
 
-Also include instructions on how to run the code, either as the output of `your-command --help` or as a separate README.md file.
+Include instructions on how to run the code, either as the output of `your-command --help` or as a separate README.md file. Your instructions should tell us how to specify the access log file to parse, as well as how to specify the MaxMind GeoIP2 City database to use. This can either be done via command line flags or by telling us where to put these files relative to your script.
 
 The code you write should use one of the available GeoIP2 APIs to get geographical information about the IP addresses in the log. See [our developer site](http://dev.maxmind.com/geoip/geoip2/downloadable/) for details on the APIs which are available. Feel free to use either an official API or a third party one. Use the [GeoLite2 City database](http://dev.maxmind.com/geoip/geoip2/geolite2/) as your MaxMind database.
 
