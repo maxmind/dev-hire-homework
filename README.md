@@ -31,6 +31,8 @@ The report itself should show the following information:
 * Top 10 US states, ignoring visitors outside the US
     * same as above for output
 
+*For the purposes of this code, "the page" is the path including the query string.*
+
 If there are less than 10 states or countries with visitors, only show those which have at least one visitor.
 
 Note that the GeoLite2 data file may simply not have all the relevant information on some IP addresses. In this case, assign the visit to a state or country of "unknown" as needed.
