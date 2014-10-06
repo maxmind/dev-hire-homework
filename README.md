@@ -31,7 +31,7 @@ The report itself should show the following information:
 * Top 10 US states, ignoring visitors outside the US
     * same as above for output
 
-*For the purposes of this code, "the page" is the path including the query string.*
+**For the purposes of this code, "the page" is the path including the query string.**
 
 If there are less than 10 states or countries with visitors, only show those which have at least one visitor.
 
