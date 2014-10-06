@@ -10,9 +10,9 @@ Include a command line program to run your code against an arbitrary file. The o
 
 Ignore all requests for images, CSS, and JavaScript. This is any request path beginning with:
 
-* `/[a-f0-9]/css/`
-* `/[a-f0-9]/images/`
-* `/[a-f0-9]/js/`
+* `/[a-f0-9]+/css/`
+* `/[a-f0-9]+/images/`
+* `/[a-f0-9]+/js/`
 * `/entry-images/`
 * `/images/`
 * `/user-images/`
