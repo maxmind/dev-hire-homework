@@ -38,3 +38,12 @@ The report itself should show the following information:
 If there are less than 10 states or countries with visitors, only show those which have at least one visitor.
 
 Note that the GeoLite2 data file may simply not have all the relevant information on some IP addresses. In this case, assign the visit to a state or country of "unknown" as needed.
+
+## Sharing Your Code with Us
+
+We do not want your answer to be publicly available on the Internet for anyone to find. You can share your code with us in one of several ways:
+
+* Make a private repo and share it with us. We will tell you who to invite to the repo when we ask you to do this homework.
+  * While GitHub charges for private repos, you can also use BitBucket or GitLab, both of which allow private repos on their free plans.
+* Send us an email with a zip or tarball attachment. You can send this to your HR contact at MaxMind.
+
