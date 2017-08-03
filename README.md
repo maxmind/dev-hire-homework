@@ -47,3 +47,7 @@ We do not want your answer to be publicly available on the Internet for anyone t
   * While GitHub charges for private repos, you can also use BitBucket or GitLab, both of which allow private repos on their free plans.
 * Send us an email with a zip or tarball attachment. You can send this to your HR contact at MaxMind.
 
+## Copyright
+
+This repository is copyright MaxMind 2014-2017. You may distribute it under
+the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
