@@ -3,18 +3,14 @@ homework (but if you're an applicant you're welcome to read this).
 
 ## Questions to Ask When Reviewing Homework
 
-* Is the code in one of the specified languages, or did the applicant get a
-  special dispensation (papal or otherwise) to use another language?
-* Is the code runnable on an Ubuntu Trusty or Xenial system without too much
-  difficulty (installing 3rd party libraries is not too much difficulty as
-  long as clear instructions are provided. Installing ten PPAs from ten
-  different sources *is* too much difficulty)?
-  * If the code is not in Perl or Go, are the instructions written for people
+* Is the code runnable on an Ubuntu system without too much difficulty
+  (installing 3rd party libraries is not too much difficulty as long as clear
+  instructions are provided. Installing ten PPAs from ten different sources
+  *is* too much difficulty)?
+  * If the code is not in Go or Perl, are the instructions written for people
     without much experience in that language?
 * Does the homework include instructions in a `README` or as the output of
   `command --help`?
-  * If the code isn't in Perl or Go, there really needs to be a `README` of
-    some sort!
 * Does the code do more or less what it should (run it and eyeball the output
   for sanity)?
   * We should expect some slight variance from the internal answer we have
