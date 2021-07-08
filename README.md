@@ -26,10 +26,10 @@ Also ignore all paths ending in `.rss` or `.atom`.
 
 The report itself should show the following information:
 
-* Top 10 countries for visitors
-    * include the name of the country in English and the number of visitors from that country
-    * sort the results by number of visitors (most to least)
-    * for each country show the page *other than `/`* that visitors from that country visited the most
+* Top 10 countries by number of page views
+    * include the name of the country in English and the number of page views from that country
+    * sort the results by number of page views (most to least)
+    * for each country show the page *other than `/`* that visitors from that country viewed the most
 * Top 10 US states, ignoring visitors outside the US
     * same as above for output
 
@@ -37,7 +37,7 @@ The report itself should show the following information:
 
 If there are less than 10 states or countries with visitors, only show those which have at least one visitor.
 
-Note that the GeoLite2 data file may simply not have all the relevant information on some IP addresses. In this case, assign the visit to a state or country of "unknown" as needed.
+Note that the GeoLite2 data file may simply not have all the relevant information on some IP addresses. In this case, assign the page views to a state or country of "unknown" as needed.
 
 ## Sharing Your Code with Us
 
