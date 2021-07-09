@@ -39,6 +39,12 @@ If there are less than 10 states or countries with visitors, only show those whi
 
 Note that the GeoLite2 data file may simply not have all the relevant information on some IP addresses. In this case, assign the page views to a state or country of "unknown" as needed.
 
+## How Long Should It Take?
+
+We've created this exercise with the expectation that it take approximately
+2 hours. You're welcome to spend longer if you judge it appropriate, but we
+want to be respectful of your time.
+
 ## Sharing Your Code with Us
 
 We do not want your answer to be publicly available on the Internet for anyone to find. You can share your code with us in one of several ways:
