@@ -6,7 +6,7 @@ Although we primarily use Go and Perl, you may write the code in your preferred 
 
 Include instructions on how to run the code, either as the output of `your-command --help` or as a separate README.md file. Your instructions should tell us how to specify the access log file to parse, as well as how to specify the MaxMind GeoLite2 City database to use. This can either be done via command-line flags or by telling us where to put these files relative to your script.
 
-The code you write should use one of the available GeoIP2 APIs to get geographical information about the IP addresses in the log. See [our developer site](https://dev.maxmind.com/geoip/geolocate-an-ip/databases) for details on the APIs which are available. Feel free to use either an official API or a third-party one. **You must use one of the APIs linked from this page.** Use the [GeoLite2 City database](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) as your MaxMind database.
+The code you write should use one of the available GeoIP2 APIs to get geographical information about the IP addresses in the log. See [our developer site](https://dev.maxmind.com/geoip/docs/databases?lang=en#api-clients) for details on the available APIs. Feel free to use either an official API or a third-party one. **You must use one of the APIs linked from this page.** Use the [GeoLite2 City database](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) as your MaxMind database.
 
 Include a command-line program to run your code against an arbitrary file. The output of that program should be a report in the format of your choice. Don't worry too much about making this fancy. Printing lightly formatted text to the console is fine (so is an HTML page).
 
