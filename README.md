@@ -34,7 +34,7 @@ details on the available APIs. Feel free to use either an official API or a
 third-party one. **You must use one of the APIs linked from this page.** Use
 the [GeoLite2 City
 database](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) as your
-MaxMind database.
+MaxMind database. **Do NOT use the GeoLite2 web service.**
 
 Include a command-line program to run your code against an arbitrary file. The
 output of that program should be a report in the format of your choice. Don't
