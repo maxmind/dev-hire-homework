@@ -54,6 +54,9 @@ beginning with:
 * `/robots.txt`
 * `/favicon.ico`
 
+Please note that the first three path prefixes are regular expressions. The
+remaining are plain text.
+
 Also ignore all paths ending in `.rss` or `.atom`.
 
 The report itself should show the following information:
