@@ -29,11 +29,11 @@ script.
 
 The code you write should use one of the available GeoIP2 APIs to get
 geographical information about the IP addresses in the log. See [our developer
-site](https://dev.maxmind.com/geoip/docs/databases?lang=en#api-clients) for
+site](https://dev.maxmind.com/geoip/docs/databases/?lang=en#api-clients) for
 details on the available APIs. Feel free to use either an official API or a
 third-party one. **You must use one of the APIs linked from this page.** Use
 the [GeoLite2 City
-database](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) as your
+database](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data/) as your
 MaxMind database. **Do NOT use the GeoLite2 web service.**
 
 Include a command-line program to run your code against an arbitrary file. The
