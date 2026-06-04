@@ -1,0 +1,58 @@
+# Lychee link checker configuration
+# https://lychee.cli.rs/#/usage/config
+#
+# Run locally with:
+#   lychee './**/*.md' './bin/*'
+
+# Include URL fragments in checks
+include_fragments = true
+
+# Don't allow any redirects, so links that have moved are surfaced and can be
+# updated to their canonical destination.
+max_redirects = 0
+
+# Accept these HTTP status codes
+# 100-103: Informational responses
+# 200-299: Success responses
+# 403: Forbidden (some sites use this for rate limiting)
+# 429: Too Many Requests
+# 500-599: Server errors (temporary issues shouldn't fail CI)
+# 999: LinkedIn's custom status code
+accept = ["100..=103", "200..=299", "403", "429", "500..=599", "999"]
+
+# Exclude URL patterns from checking (treated as regular expressions)
+exclude = [
+    # GitHub blob URLs with line-number fragments (not parseable as page anchors)
+    '^https://github\.com/[^/]+/[^/]+/blob/[0-9a-fA-F]+/.+#L\d+$',
+    # dev.maxmind.com docs are a client-side rendered SPA: heading anchors such
+    # as #api-clients exist for users but are absent from the static HTML, so
+    # lychee's fragment check reports a false "fragment not found". The page
+    # itself returns a clean 200.
+    '^https://dev\.maxmind\.com/geoip/docs/.+#',
+    # Live / auth-gated MaxMind endpoints: appear as code string literals or
+    # require login, so they can't be verified by an anonymous request.
+    '^https://geoip\.maxmind\.com',
+    '^https://geolite\.info',
+    '^https://www\.maxmind\.com/en/accounts/',
+    # Local / placeholder URLs
+    '^file://',
+    '^https?://example\.(com|org|net)',
+    '^http://localhost',
+    '127\.0\.0\.1',
+]
+
+# Exclude file paths from getting checked (regular expressions, matched against
+# the path relative to the working directory). Patterns are segment-anchored
+# with (^|/) so short names don't match unintended paths.
+exclude_path = [
+    # Apache access-log data fixture: a large sample log full of crawler user
+    # agent URLs that are not project links and must not be checked.
+    '(^|/)access\.log$',
+]
+
+# Cache results for 1 day to speed up repeated checks
+cache = true
+max_cache_age = "1d"
+
+# Skip missing input files instead of erroring
+skip_missing = true
